@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+const Exhibit = ({ heading, children }) => {
+  return (
+    <div className="exhibit-container">
+      <h2 className="exhibit-heading">{heading}</h2>
+      <div className="exhibit-content">
+        {children}
+      </div>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p h3>
+          SEXTANT:Website for field technician
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Exhibit heading="Exhibit">
+          {}
+        </Exhibit>
       </header>
     </div>
   );
