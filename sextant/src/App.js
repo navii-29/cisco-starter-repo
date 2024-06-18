@@ -1,30 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Banner from './Banner';
+import Exhibit from './Exhibit';
 
-const Exhibit = ({ heading, children }) => {
-  return (
-    <div className="exhibit-container">
-      <h2 className="exhibit-heading">{heading}</h2>
-      <div className="exhibit-content">
-        {children}
-      </div>
-    </div>
-  );
-};
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p h3>
-          SEXTANT:Website for field technician
-        </p>
-        <Exhibit heading="Exhibit">
-          {}
-        </Exhibit>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Banner bannerText="Sextant" />
+                <Exhibit name="I'm an exhibit!"></Exhibit>
+                <Exhibit name="I'm also an exhibit!"></Exhibit>
+                <Exhibit name="Don't forget about me, I'm an exhibit too!"></Exhibit>
+            </div>
+        );
+    }
 }
 
 export default App;
