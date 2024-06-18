@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import IPInfo from './IPInfo';
+import Container from './Container';
+
 
 class App extends Component {
     render() {
@@ -11,7 +14,10 @@ class App extends Component {
                 <Exhibit name="I'm an exhibit!"></Exhibit>
                 <Exhibit name="I'm also an exhibit!"></Exhibit>
                 <Exhibit name="Don't forget about me, I'm an exhibit too!"></Exhibit>
-            </div>
+
+            
+    </div>
+  
         );
     }
 }
